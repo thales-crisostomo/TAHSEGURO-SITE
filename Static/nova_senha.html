@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+            <link rel="stylesheet" href="style/nova_senha.css?v6000">
+            <link rel="stylesheet" href="materialize/css/materialize.css">
+            
+            
+            <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script src="https://kit.fontawesome.com/b7b73e00fe.js"></script>
+            <meta charset="utf-8"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/nova_senha.js?v6000"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=0.5">
+            <title>Tah Seguro</title>
+            <!--<link rel="shortcut icon" href="../logos/logo-ico.ico" />-->
+        </head>
+    <body>
+        <div> 
+            
+            <div class="container-form">
+                <div style="width: 700px; display: flex; justify-content: center; align-items: center; flex-direction: column">
+                    <div style="display: flex; flex-direction: column; font-size: 40px; color: #FD5266; align-items: center; ">
+                        <span>Tah</span>
+                        <span style="margin-top: -20px">Seguro</span>
+                        <span style="margin-top: 0px; font-size: 20px; color: gray">Recuperar senha</span>
+                    </div>
+                    <div style="width: 60%; margin-top: 10%">
+                        <div id="container-usuario">
+                            <input type="password" id="senha" placeholder="Nova senha">
+                            <div id="ver-senha" class="cursor">
+                                <i class="fas fa-eye-slash" style="color: gray; padding-right: 10px"></i>
+                            </div>
+                        </div>
+                        <div style="padding: 5px;"></div>
+                        <div id="container-senha">
+                            <input type="password" id="resenha" placeholder="Repita nova senha">
+                            <div id="ver-resenha" class="cursor">
+                                <i class="fas fa-eye-slash" style="color: gray; padding-right: 10px"></i>
+                            </div>
+                        </div>
+                        <!--<input type="password" id="senha">-->
+                        <div style="padding: 5px;"></div>
+                        <div style="display: flex; justify-content: flex-end; align-items: center; width: 100%;">
+                            <div style="width: 50%; margin-top: 10%;">
+                                <div class="salvar">
+                                    <span id="text-salvar">Salvar</span>
+                                    <div class="spinner" >
+                                      <div class="bounce1"></div>
+                                      <div class="bounce2"></div>
+                                      <div class="bounce3"></div>
+                                    </div> 
+                                    
+                                    <div id="sucesso">
+                                        <i class="fas fa-check" style="color: white; font-size: 25px"></i>
+                                    </div>
+                                    <div id="error">
+                                        <i class="fas fa-times" style="color: white; font-size: 25px"></i>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <br><br><br>
+                    <div style="padding: 10px; display: flex; justify-content: center; align-items: center; height: 100px; width: 100%;">
+                        <span id="text-alerta"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <!-- ANIMAÇÃO DOS ITEMS NA DIV -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../materialize/js/materialize.js"></script>
+    <script>
+        AOS.init({
+              offset: 20, // offset (in px) from the original trigger point
+              duration: 300, // values from 0 to 3000, with step 50ms
+        });
+        $(".dropdown-trigger").dropdown();
+    </script>
+    
+</html>
